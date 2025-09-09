@@ -1,7 +1,6 @@
 const express = require('express');
 const app = express();
 app.use(express.json());
-<<<<<<< HEAD
 
 // Temporary in-memory DB
 let quizzes = [
@@ -46,7 +45,3 @@ app.post('/quizzes/:id/attempt', (req, res) => {
 app.listen(process.env.PORT || 3002, () => {
   console.log('quiz-service running on port', process.env.PORT || 3002);
 });
-=======
-app.get('/health', (req, res) => res.json({status: 'ok', service: 'quiz-service'}));
-app.listen(process.env.PORT||3002, ()=> console.log('quiz-service running'));
->>>>>>> origin/main
